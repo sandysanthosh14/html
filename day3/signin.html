@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Sign In page </title>
+    </head>
+    <body>
+        <h1>signin</h1>
+        <hr>
+        <form action="profile.html" method="post">
+            <div>
+                <lable>Name:</lable>
+                <input type="name" name="name" placeholder="enter your name">
+                
+            </div>
+            <br>
+            <div>
+                <lable>email:</lable>
+                <input type="email" name="name" placeholder="enter your email">
+                
+            </div>
+            <br>
+            <div>
+                <lable>password:</lable>
+                <input type="password" name="password" placeholder=" password">
+                
+            </div>
+            <br>
+            <div>
+                <lable>Confirm:</lable>
+                <input type="password" name="password" placeholder="Confirm password" pattern=".{6,}" title="Password must be at least 6 characters" required>
+                
+            </div>
+            <br><br>
+            <div>
+                <lable>gender:</lable>
+                <select name="gender">
+                    <option name="male">male</option>
+                    <option name="female">female</option>
+
+                </select>
+                
+            </div>
+            <br><br>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+            </div>
+            
+            <br><br>
+            <div>
+                <label for="message">Bio:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                <br><br>
+            </div>
+            <div>
+                <label for="hobbies"> Hobbies
+                    <input type="checkbox" id="preference1" name="reading" value="option1"> reading
+                </label>
+                <br>
+                <label for="preference2">
+                    <input type="checkbox" id="preference2" name="sports" value="option2"> sports
+                </label>
+                <br>
+                <label for="preference3">
+                    <input type="checkbox" id="preference3" name="Cooking" value="option3"> Cooking
+                </label>
+            </div>
+            <br>
+            <br>
+            <button type="submit">signin</button>
+
+
+
+        </form>
+    </body>
+</html>
